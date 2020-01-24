@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641275, b: 0.5748172, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657838, g: 0.49641234, b: 0.57481676, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -397,6 +397,7 @@ GameObject:
   - component: {fileID: 588883318}
   - component: {fileID: 588883317}
   - component: {fileID: 588883316}
+  - component: {fileID: 588883319}
   m_Layer: 5
   m_Name: Button_2
   m_TagString: Untagged
@@ -503,6 +504,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 588883314}
   m_CullTransparentMesh: 0
+--- !u!114 &588883319
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 588883314}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26895d8a1cc764d238cdb1e2e8a5cb42, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &638827485
 GameObject:
   m_ObjectHideFlags: 0
@@ -675,6 +688,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b5069ea3ce8a05743afcff9657193245, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &762040184
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 762040176}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7047a2e1614247889fb2f1e3cffd85d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isButton_1: 0
+  isButton_2: 0
+  isButton_3: 0
 --- !u!1 &978436277
 GameObject:
   m_ObjectHideFlags: 0
@@ -688,6 +716,7 @@ GameObject:
   - component: {fileID: 978436280}
   - component: {fileID: 978436279}
   - component: {fileID: 978436282}
+  - component: {fileID: 978436283}
   m_Layer: 5
   m_Name: Button_1
   m_TagString: Untagged
@@ -813,6 +842,54 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &978436283
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 978436277}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26895d8a1cc764d238cdb1e2e8a5cb42, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &992762623
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 992762624}
+  m_Layer: 0
+  m_Name: equipment
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &992762624
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 992762623}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1011394757}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &1011394757 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8335003616567136814, guid: 7737647c22c1fc64a88d5cd030c352ce,
+    type: 3}
+  m_PrefabInstance: {fileID: 1792477714}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1087445757
 GameObject:
   m_ObjectHideFlags: 0
@@ -1112,6 +1189,7 @@ GameObject:
   - component: {fileID: 1289923820}
   - component: {fileID: 1289923819}
   - component: {fileID: 1289923818}
+  - component: {fileID: 1289923821}
   m_Layer: 5
   m_Name: Button_3
   m_TagString: Untagged
@@ -1218,6 +1296,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1289923816}
   m_CullTransparentMesh: 0
+--- !u!114 &1289923821
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1289923816}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26895d8a1cc764d238cdb1e2e8a5cb42, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1341213111
 GameObject:
   m_ObjectHideFlags: 0

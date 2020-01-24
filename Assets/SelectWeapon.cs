@@ -12,6 +12,14 @@ public class SelectWeapon : MonoBehaviour
     Button button_2;
     Button button_3;
 
+    /**
+     * 武器を選んだボタン
+     */
+
+    public bool isButton_1 = false;
+    public bool isButton_2 = false;
+    public bool isButton_3 = false;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -21,13 +29,27 @@ public class SelectWeapon : MonoBehaviour
         button_3 = GameObject.Find("/Canvas/Button_3").GetComponent<Button>();
 
         // 最初にButtan_1を選択状態にする．
-        button_1.Select();
+        //button_1.Select();
 
     }
 
     // Update is called once per frame
     void Update()
     {
+        if (isButton_1)
+		{
+
+		}
+
+        if (isButton_2)
+		{
+
+		}
+
+        if (isButton_3)
+		{
+
+		}
         
     }
 }

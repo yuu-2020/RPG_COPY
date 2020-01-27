@@ -6,7 +6,6 @@ public class ChangeButton : MonoBehaviour
 {
     ButtonManager buttonManager = new ButtonManager();
 
-    // Start is called before the first frame update
     void Start()
     {
         buttonManager.isButtonProperty_1 = true;
@@ -14,12 +13,15 @@ public class ChangeButton : MonoBehaviour
         buttonManager.isButtonProperty_3 = false;
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
-
+    /**
+     * ボタンがクリックされたときに呼び出されるメソッド
+     * 
+     * num: 押されたボタンを判別する．
+     * 0: 武器１
+     * 1: 武器２
+     * 2: 武器３
+     *
+     */
     public void OnClick(int num)
     {
         switch (num)

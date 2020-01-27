@@ -6,6 +6,8 @@ public class ChangeButton : MonoBehaviour
 {
     ChangeEquip equip = new ChangeEquip();
 
+    public bool debug = false;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -24,12 +26,18 @@ public class ChangeButton : MonoBehaviour
         {
             case 0:
                 equip.isButton_1 = true;
+                debug = true;
+                //Debug.Log(equip.isButton_1);
                 break;
             case 1:
                 equip.isButton_2 = true;
+                //Debug.Log(equip.isButton_2);
+                debug = false;
                 break;
             case 2:
                 equip.isButton_3 = true;
+                //Debug.Log(equip.isButton_3);
+                debug = true;
                 break;
             default:
                 break;

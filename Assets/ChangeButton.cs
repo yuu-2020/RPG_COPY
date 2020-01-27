@@ -4,14 +4,14 @@ using UnityEngine;
 
 public class ChangeButton : MonoBehaviour
 {
-    ChangeEquip equip = new ChangeEquip();
-
-    public bool debug = false;
+    ButtonManager buttonManager = new ButtonManager();
 
     // Start is called before the first frame update
     void Start()
     {
-        equip.isButton_1 = true;
+        buttonManager.isButtonProperty_1 = true;
+        buttonManager.isButtonProperty_2 = false;
+        buttonManager.isButtonProperty_3 = false;
     }
 
     // Update is called once per frame
@@ -25,19 +25,19 @@ public class ChangeButton : MonoBehaviour
         switch (num)
         {
             case 0:
-                equip.isButton_1 = true;
-                debug = true;
-                //Debug.Log(equip.isButton_1);
+                buttonManager.isButtonProperty_1 = true;
+                buttonManager.isButtonProperty_2 = false;
+                buttonManager.isButtonProperty_3 = false;
                 break;
             case 1:
-                equip.isButton_2 = true;
-                //Debug.Log(equip.isButton_2);
-                debug = false;
+                buttonManager.isButtonProperty_1 = false;
+                buttonManager.isButtonProperty_2 = true;
+                buttonManager.isButtonProperty_3 = false;
                 break;
             case 2:
-                equip.isButton_3 = true;
-                //Debug.Log(equip.isButton_3);
-                debug = true;
+                buttonManager.isButtonProperty_1 = false;
+                buttonManager.isButtonProperty_2 = false;
+                buttonManager.isButtonProperty_3 = true;
                 break;
             default:
                 break;

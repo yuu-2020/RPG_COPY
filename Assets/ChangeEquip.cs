@@ -5,12 +5,7 @@ using UnityEngine;
 public class ChangeEquip : MonoBehaviour
 {
 
-    /**
-     * 武器を選んだボタン
-     */
-    public bool isButton_1 = false;
-    public bool isButton_2 = false;
-    public bool isButton_3 = false;
+    ButtonManager buttonManager = new ButtonManager();
 
     [SerializeField]
     private GameObject[] weapons;
@@ -22,8 +17,8 @@ public class ChangeEquip : MonoBehaviour
     void Start()
     {
         weapons[0].SetActive(false);
-        weapons[0].SetActive(false);
-        weapons[0].SetActive(false);
+        weapons[1].SetActive(false);
+        weapons[2].SetActive(false);
     }
 
     // Update is called once per frame
@@ -37,25 +32,25 @@ public class ChangeEquip : MonoBehaviour
 
         //Debug.Log("debug:" + button.debug);
 
-        if (isButton_1)
+        if (buttonManager.isButtonProperty_1)
 		{
             weapons[0].SetActive(true);
-            weapons[0].SetActive(false);
-            weapons[0].SetActive(false);
+            weapons[1].SetActive(false);
+            weapons[2].SetActive(false);
         }
 
-        if (isButton_2)
+        if (buttonManager.isButtonProperty_2)
 		{
             weapons[0].SetActive(false);
-            weapons[0].SetActive(true);
-            weapons[0].SetActive(false);
+            weapons[1].SetActive(true);
+            weapons[2].SetActive(false);
         }
 
-        if (isButton_3)
+        if (buttonManager.isButtonProperty_3)
 		{
             weapons[0].SetActive(false);
-            weapons[0].SetActive(false);
-            weapons[0].SetActive(true);
+            weapons[1].SetActive(false);
+            weapons[2].SetActive(true);
         }
     }
 }

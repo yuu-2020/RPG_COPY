@@ -15,7 +15,7 @@ public class ChangeEquip : MonoBehaviour
     [SerializeField]
     private GameObject[] weapons;
 
-    ChangeButton button = new ChangeButton();
+    //ChangeButton button = new ChangeButton();
 
 
     // Start is called before the first frame update
@@ -35,7 +35,7 @@ public class ChangeEquip : MonoBehaviour
         Debug.Log("3" + isButton_3);
         */
 
-        Debug.Log("debug:" + button.debug);
+        //Debug.Log("debug:" + button.debug);
 
         if (isButton_1)
 		{
